@@ -97,6 +97,41 @@ Claude's **chunking ability**. When a query involves too many entities and relat
 
 ---
 
+## Production Results
+
+This system has been running in production since January 2026 across multiple active projects. Here's what baseline Claude Code gives you vs. what Cortex delivers:
+
+### Memory Capacity
+
+| What Claude Knows | Baseline Claude Code | With Cortex |
+|---|---|---|
+| **Persistent memory** | ~200 lines of MEMORY.md | 1,300+ lines of curated notes, 60+ daily logs, 125+ contact/entity profiles |
+| **Searchable history** | None - previous sessions are gone | 7,400+ indexed conversation chunks with 14,500+ cached embeddings |
+| **Entity awareness** | None - doesn't know who anyone is | 265+ graph nodes (people, projects, companies) with 230+ tracked relationships |
+| **Session startup context** | Zero - cold start every time | Auto-loads active goals, scratchpad notes, session handoffs, 100+ pending items |
+| **Relationship queries** | Impossible | Graph traversal across 170+ people, 60+ projects, 12+ organizations |
+| **Past decision recall** | "I don't have context on that" | Semantic + keyword search across every past conversation |
+| **Context overflow** | Truncates randomly, loses important data | RLM-Graph: decomposes queries using graph topology, nothing lost |
+
+### What That Looks Like In Practice
+
+**Without Cortex** (session 47 on a project):
+> "I don't have any context about your project. Could you tell me what you're working on?"
+
+**With Cortex** (session 47 on a project):
+> *Before you type anything, Claude already knows:*
+> - The exact current time (no more wrong dates)
+> - Your active goal from 2 hours ago and its subgoals
+> - That your last session ended mid-debug on a specific function
+> - 3 pending items from yesterday's work
+> - The handoff notes your previous session left behind
+> - Every architectural decision you've made this month (searchable)
+> - How every person, project, and system in your world connects to each other
+
+The difference isn't incremental. It's the difference between working with someone who has amnesia and working with someone who has been on your team for months.
+
+---
+
 ## Why This Works Better Than Alternatives
 
 **vs. Just using CLAUDE.md:** CLAUDE.md is static instructions. This system gives Claude dynamic, searchable, self-updating memory that grows over time.
