@@ -1,6 +1,6 @@
-# Supercharged Memory for Claude Code
+# Claude Cortex
 
-### Give your AI agent the same memory architecture that makes human cognition work.
+### The memory layer Claude Code is missing. Modeled after the human brain.
 
 ---
 
