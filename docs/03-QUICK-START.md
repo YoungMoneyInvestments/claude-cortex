@@ -1,4 +1,4 @@
-# Quick Start: Claude Code Memory System
+# Claude Cortex: Quick Start
 ### Get running in 30 minutes
 
 ---

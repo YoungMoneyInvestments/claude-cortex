@@ -1,4 +1,4 @@
-# Implementation Guide: LLM Memory System for Claude Code
+# Claude Cortex: Implementation Guide
 ### Step-by-step setup for any project
 
 ---

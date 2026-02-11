@@ -1,5 +1,5 @@
-# Supercharged Claude Code Memory: Architecture Guide
-### How to Give Your AI Agent Persistent Memory Across Sessions
+# Claude Cortex: Architecture Guide
+### How the 7-Layer Memory Stack Works
 
 **Based on:** Production system running since January 2026
 **Status:** 267+ knowledge graph nodes, 231+ relationships, 48h automatic context loading
